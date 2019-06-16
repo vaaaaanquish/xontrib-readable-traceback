@@ -10,7 +10,7 @@ install_requires = ['backtrace', 'colorama']
 
 setup(
     name='xontrib-readable-traceback',
-    version='0.2.5',
+    version='0.3.0',
     description='Traceback easier to see for xonsh.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",

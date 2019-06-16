@@ -9,7 +9,7 @@ import os
 from colorama import init, Fore, Style
 
 __all__ = ()
-__version__ = '0.2.5'
+__version__ = '0.3.0'
 
 $XONSH_SHOW_TRACEBACK=True
 $XONSH_TRACEBACK_LOGFILE=None
