@@ -6,7 +6,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-install_requires = ['colorama==0.3.7', 'backtrace']
+install_requires = ['colorama>=0.3.7', 'backtrace']
 
 setup(
     name='xontrib-readable-traceback',
