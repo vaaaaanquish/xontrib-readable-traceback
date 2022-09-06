@@ -44,7 +44,7 @@ def __flush(message):
 backtrace._flush=__flush
 
 
-def _print_exception(msg=None):
+def _print_exception(msg=None, exc_info=None):
     """
     Override xonsh.tools.print_exception.
     """
@@ -64,7 +64,7 @@ def _print_exception(msg=None):
             traceback.print_exc(file=f)
 
     #backtrace_hock
-    tpe, v, tb = sys.exc_info()
+    tpe, v, tb = sys.exc_info() if exc_info is None else exc_info
     if $XONSH_READABLE_TRACEBACK:
         backtrace.hook(
             tb=tb,
